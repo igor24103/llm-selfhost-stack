@@ -1,4 +1,4 @@
-# Ollama AI Server — Setup Guide for Client
+# Ollama AI Server — Setup Guide
 
 ## Server Requirements
 - OS: Ubuntu 22.04 LTS
@@ -73,7 +73,7 @@ Config: `/etc/nginx/sites-available/ollama`
 ```nginx
 server {
     listen 80;
-    server_name ai.yourcomain.com;
+    server_name ai.yourdomain.com;
 
     location / {
         proxy_pass http://127.0.0.1:11434;
